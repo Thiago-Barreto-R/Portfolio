@@ -1,0 +1,45 @@
+@use 'variaveis' as * ;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-primary;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.active {
+    color: $primary-color;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        bottom: .5rem;
+        left: .55rem;
+        background-color: $primary-color;
+    }
+}
+
+.header-top.scroll {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.639);
+}

@@ -1,0 +1,65 @@
+@use 'variaveis' as * ;
+
+.header-top {
+    width: 100%;
+    max-width: 1400px;
+    background-color: $bg-secondary;
+
+    .navigation {
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        .mobile-menu {
+            cursor: pointer;
+            display: none;
+
+            div {
+                background-color: $white;
+                width: 32px;
+                height: 2px;
+                margin: 8px;
+                transition: .3s ease-in-out;
+            }
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            .item {
+                padding: .5rem;
+                transition: .3s ease-in-out;
+                position: relative;
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: .5rem;
+                    left: .55rem;
+                    background-color: $primary-color;
+                    transition: .4s ease-in-out;
+                }
+
+                &:hover::after {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
