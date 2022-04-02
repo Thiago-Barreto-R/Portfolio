@@ -1,12 +1,16 @@
 @use 'variaveis' as * ;
 
 .header-top {
-    width: 100%;
-    max-width: 1400px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     background-color: $bg-secondary;
-
+    
     .navigation {
         width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
         padding: 1rem 0;
         display: flex;
         align-items: center;
@@ -16,6 +20,10 @@
             font-size: 1.2rem;
             font-weight: 200;
             font-style: italic;
+            
+            a {
+                color: $primary-color;
+            }
         }
 
         .mobile-menu {
