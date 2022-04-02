@@ -22,7 +22,7 @@
 
 ### :wrench: Tecnologias
 
-As seguintes ferramentas estão sendo usadas na construção do projeto:
+As seguintes ferramentas que estão sendo usadas na construção do projeto:
 
 - [HTML5](https://www.w3schools.com/html/default.asp)
 - [CSS3](https://www.w3schools.com/css/default.asp)
@@ -41,6 +41,8 @@ As seguintes ferramentas estão sendo usadas na construção do projeto:
 [![Linkedin Badge](https://img.shields.io/badge/-Thiago_Barreto-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thiago-barreto-rodrigues/)](https://www.linkedin.com/in/thiago-barreto-rodrigues/)
 [![Gmail Badge](https://img.shields.io/badge/-tbarreto585@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tbarret585@gmail.com)](mailto:tbarreto585@gmail.com)
 
+### :pencil: Licença
+
 Este projeto esta sobe a licença [Mit](LICENSE).
 
-Feito com :heart: por Thiago Marinho :wave: [Entre em contato](https://www.linkedin.com/in/thiago-barreto-rodrigues/)!
+Feito com muito :heart: por Thiago Rodrigues :wave: [Entre em contato](https://www.linkedin.com/in/thiago-barreto-rodrigues/)!
