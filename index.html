@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/css/style.css">
 </head>
 <body>
@@ -35,25 +37,24 @@
 
     <section id="inicio">
         <div class="caixa">
-            <main class="ld-esquerdo">
-                <span>Olá eu sou <br> <h2>Thiago Barreto R.</h2></span>
-                <p class="servico">Desenvolvedor Front-end Freelancer. Eu crio experiências web perfeitas para usuários finais.</p>
-                <div class="btns">
-                    <a class="btn btn-sobre" href="">Sobre mim</a>
-                    <a class="btn btn-projetos" href="">Projetos</a>
-                </div>
-            </main>
             <div class="esfera">
                 <img src="styles/assets/fotoOfc 1.svg" alt="Foto de perfio">
             </div>
+            <main class="ld-esquerdo">
+                <span>Olá eu sou <br> <h2>Thiago Barreto R.</h2></span>
+                <p class="servico">Desenvolvedor Front-end Freelancer. Eu crio experiências web perfeitas para usuários.</p>
+                <div class="btns">
+                    <a class="btn btn-sobre" href="#sobre">Sobre mim</a>
+                    <a class="btn btn-projetos" href="#projetos">Projetos</a>
+                </div>
+            </main>
         </div>
     </section>
 
     <section id="sobre">
         <div class="caixa">
             <h3 class="title-sobre">Sobre mim:</h3>
-            <p class="texto-sobre">Olá, meu nome é Thiago Barreto Rodrigues, sou desenvolvedor Front-end. Aprimorei minhas habilidades de Desenvolvimento Web e tenho uma compreensão básica dos princípios avançados de design de interface do usuário. Aqui estão as principais habilidades que tenho.</p>
-            <p class="texto-sobre2">Acadêmico em Ciência da Computação. Especializada no desenvolvimento de aplicações web, garantindo uma boa experiência na web para usuários finais.</p>
+            <p class="texto-sobre">Olá, meu nome é Thiago Barreto Rodrigues, sou desenvolvedor Front-end. Acadêmico em Ciência da Computação, aprimorei minhas habilidades de Desenvolvimento Web e tenho uma compreensão básica dos princípios de design. Aqui estão as principais habilidades que tenho.</p>
             <div class="caixas">
                 <div class="caixa caixa-ui"><p>UI & UX Design</p></div>
                 <div class="caixa caixa-dev"><p>Web Developer</p></div>
@@ -61,14 +62,130 @@
             <div class="servicos">
                 <h3 class="title-servicos">Os serviços que ofereço:</h3>
                 <div class="caixas-servicos">
-                    <div class="caixa boder"><p>UI & UX Design</p></div>
-                    <div class="caixa caixa-dev"><p>Web Developer</p></div>
-                    <div class="caixa caixa-dev"><p>Web Developer</p></div>
-                    <div class="caixa boder"><p>Web Developer</p></div>
+                    <div class="caixa boder">
+                        <img src="styles/assets/vuesax/ruler&pen.svg" alt="">
+                        <h4>UI & UX Design</h3>
+                        <p>Eu projeto belas interfaces web com o figma.</p>
+                    </div>
+                    <div class="caixa caixa-dev">
+                        <img src="styles/assets/vuesax/code.svg" alt="">
+                        <h4>Desenvolvimento Web</h3>
+                        <p>Eu crio belas interfaces com Html5, Css3 com Sass e JavaScript.</p>
+                    </div>
+                    <div class="caixa caixa-dev">
+                        <img src="styles/assets/vuesax/git-repo.svg" alt="">
+                        <h4>Controle de versão</h3>
+                        <p>Eu uso sistema de controle de versão Git.</p>
+                    </div>
+                    <div class="caixa boder">
+                        <img src="styles/assets/vuesax/Vector.svg" alt="">
+                        <h4>NPM</h3>
+                        <p>Tenho conhecimento Básico de NPM.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="projetos">
+        <div class="caixa-container">
+            <h2>Projetos</h2>
+            <p>Trabalhei em muitos projetos ao longo de ser um desenvolvedor da Web, aqui estão alguns dos meus projetos ao vivo e do mundo real.</p>
+
+            <div class="slide swiper mySwiper">
+                <div class="my-slider swiper-wrapper">
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                    <div class="caixa swiper-slide">
+                        <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2015/08/imagens-amor.jpg?fit=1680%2C1050&ssl=1" alt="imgg">
+                        <h4>Dekudesu</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <div class="btns">
+                            <a class="link-online" href="">Online</a>
+                            <a class="link-repositorio" href="">Repositório</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
 
     <script src="js/app.js"></script>
 </body>

@@ -106,17 +106,19 @@ a {
 #inicio {
   width: 100vw;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
   background-color: #181824;
   color: #fff;
 }
 #inicio .caixa {
   width: 100%;
+  height: 100vh;
   max-width: 1400px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row-reverse;
   position: relative;
 }
 #inicio .caixa::after {
@@ -131,7 +133,6 @@ a {
 }
 #inicio .caixa .ld-esquerdo {
   width: 35%;
-  margin-left: 6rem;
 }
 #inicio .caixa .ld-esquerdo span {
   font-weight: 500;
@@ -147,7 +148,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 60%;
+  width: 100%;
   margin-top: 3rem;
 }
 #inicio .caixa .ld-esquerdo .btns .btn {
@@ -171,9 +172,10 @@ a {
 #inicio .caixa .esfera {
   width: 400px;
   background-color: #7562E0;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   border-radius: 100%;
-  margin-top: 12rem;
+  margin-top: 15rem;
 }
 #inicio .caixa .esfera img {
   margin: -3.1rem 0 0 2rem;
@@ -200,20 +202,18 @@ a {
 #sobre .caixa .texto-sobre {
   line-height: 1.8rem;
 }
-#sobre .caixa .texto-sobre2 {
-  margin-top: 2rem;
-  line-height: 1.4rem;
-}
 #sobre .caixa .caixas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   margin: 2rem 0 0 0;
 }
 #sobre .caixa .caixas .caixa {
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   display: flex;
+  border-radius: 0.3rem;
   align-items: center;
   justify-content: center;
 }
@@ -228,7 +228,10 @@ a {
 }
 #sobre .caixa .servicos .title-servicos {
   font-size: 1.4rem;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 2rem 0;
+}
+#sobre .caixa .servicos .texto-servicos {
+  font-size: 1.2rem;
 }
 #sobre .caixa .servicos .caixas-servicos {
   display: grid;
@@ -237,12 +240,22 @@ a {
   gap: 2rem;
 }
 #sobre .caixa .servicos .caixas-servicos .caixa {
-  width: 15rem;
-  height: 15rem;
+  width: 16rem;
+  height: 16rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
   border-radius: 0.5rem;
+}
+#sobre .caixa .servicos .caixas-servicos .caixa h4 {
+  font-size: 1.2rem;
+}
+#sobre .caixa .servicos .caixas-servicos .caixa p {
+  text-align: center;
+  font-size: 0.9rem;
 }
 #sobre .caixa .servicos .caixas-servicos .caixa-dev {
   border: 1px solid #848191;
@@ -251,6 +264,98 @@ a {
   border: 1px solid #7562E0;
 }
 
+#projetos {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #181824;
+  color: #fff;
+}
+#projetos .caixa-container {
+  margin: 8rem 0 0 0;
+  max-width: 1400px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+#projetos .caixa-container .slide {
+  width: 1200px;
+  max-width: 1400px;
+}
+#projetos .caixa-container .slide .my-slider {
+  display: flex;
+  width: 10%;
+  gap: 2rem;
+}
+#projetos .caixa-container .slide .my-slider .caixa {
+  background-color: #31313F;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  width: 320px;
+  padding: 2rem;
+  height: 400px;
+  flex-direction: column;
+}
+#projetos .caixa-container .slide .my-slider .caixa img {
+  border-radius: 0.5rem;
+}
+#projetos .caixa-container .slide .my-slider .caixa p {
+  font-size: 1rem;
+}
+#projetos .caixa-container .slide .my-slider .caixa .btns {
+  display: flex;
+  justify-content: space-between;
+}
+#projetos .caixa-container .slide .my-slider .caixa .btns a {
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+}
+#projetos .caixa-container .slide .my-slider .caixa .btns .link-online {
+  background-color: #7562E0;
+}
+#projetos .caixa-container .slide .my-slider .caixa .btns .link-repositorio {
+  border: 1px solid #7562E0;
+}
+#projetos .caixa-container .slide .swiper-button-next, #projetos .caixa-container .slide .swiper-button-prev {
+  color: #7562E0;
+}
+#projetos .caixa-container .swiper {
+  width: 1000px;
+  max-width: 1400px;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 80%;
+  }
+
+  #inicio .caixa {
+    flex-direction: column;
+  }
+  #inicio .caixa::after {
+    display: none;
+  }
+  #inicio .caixa .ld-esquerdo {
+    width: 100%;
+    text-align: center;
+  }
+  #sobre .caixa .servicos .caixas-servicos {
+    grid-template-columns: 1fr;
+  }
+
+  #projetos .caixa-container .slide .my-slider .caixa {
+    height: 300px;
+  }
+  #projetos .caixa-container .swiper {
+    width: 730px;
+  }
+}
 @media (max-width: 800px) {
   body {
     overflow-x: hidden;

@@ -1,5 +1,67 @@
 @use 'variaveis' as * ;
 
+
+
+
+@media (max-width: 1080px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    #inicio {
+        
+        .caixa {
+            flex-direction: column;
+
+            &::after {
+                display: none;
+            }
+
+            .ld-esquerdo {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .esfera {
+                // display: none;
+            }
+        }
+    }
+
+    #sobre {
+
+        .caixa {
+
+            .servicos {
+
+                .caixas-servicos {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    #projetos {
+        .caixa-container {
+
+            .slide {
+
+                .my-slider {
+
+                    .caixa {
+                        height: 300px;
+                    }
+                }
+            }
+
+            .swiper {
+                width: 730px;
+            }
+        }
+    }
+}
+
 @media (max-width: 800px) {
 
 body {

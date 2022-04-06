@@ -3,17 +3,19 @@
 #inicio {
     width: 100vw;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
     background-color: $bg-secondary;
     color: $white;
 
     .caixa {
         width: 100%;
+        height: 100vh;
         max-width: 1400px;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-direction: row-reverse;
         position: relative;
 
         &::after {
@@ -29,7 +31,6 @@
 
         .ld-esquerdo {
             width: 35%;
-            margin-left: 6rem;
 
             span {
                 font-weight: 500;
@@ -48,7 +49,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                width: 60%;
+                width: 100%;
                 margin-top: 3rem;
 
                 .btn {
@@ -78,9 +79,10 @@
         .esfera {
             width: 400px;
             background-color: $primary-color;
-            height: 400px;
+            width: 25rem;
+            height: 25rem;
             border-radius: 100%;
-            margin-top: 12rem;
+            margin-top: 15rem;
 
             img {
                 margin: -3.1rem 0 0 2rem;
@@ -111,20 +113,19 @@
         .texto-sobre {
             line-height: 1.8rem;
         }
-        .texto-sobre2 {
-            margin-top: 2rem;
-            line-height: 1.4rem;
-        }
+
         .caixas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            place-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
             margin: 2rem 0 0 0;
 
             .caixa {
-                width: 15rem;
-                height: 15rem;
+                width: 12rem;
+                height: 12rem;
                 display: flex;
+                border-radius: .3rem;
                 align-items: center;
                 justify-content: center;
 
@@ -144,7 +145,11 @@
 
             .title-servicos {
                 font-size: 1.4rem;
-                margin: 3rem 0 1rem 0;
+                margin: 3rem 0 2rem 0;
+            }
+
+            .texto-servicos {
+                font-size: 1.2rem;
             }
 
             .caixas-servicos {
@@ -154,12 +159,23 @@
                 gap: 2rem;
 
                 .caixa {
-                    width: 15rem;
-                    height: 15rem;
+                    width: 16rem;
+                    height: 16rem;
+                    padding: 1rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    flex-direction: column;
+                    gap: .5rem;
                     border-radius: .5rem;
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: .9rem;
+                    }
                 }
 
                 .caixa-dev {
@@ -170,6 +186,84 @@
                     border: 1px solid $primary-color;
                 }
             }
+        }
+    }
+}
+
+#projetos {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $bg-secondary;
+    color: $white;
+
+    .caixa-container {
+        margin: 8rem 0 0 0;
+        max-width: 1400px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+
+        .slide {
+            width: 1200px;
+            max-width: 1400px;
+
+            .my-slider {
+                display: flex;
+                width: 10%;
+                gap: 2rem;
+    
+                .caixa {
+                    background-color: #31313F;
+                    border-radius: .5rem;
+                    display: flex;
+                    gap: 1rem;
+                    width: 320px;
+                    padding: 2rem;
+                    height: 400px;
+                    flex-direction: column;
+
+                    img {
+                        border-radius: .5rem;
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    .btns {
+                        display: flex;
+                        justify-content: space-between;
+
+                        a {
+                            padding: .5rem;
+                            border-radius: .6rem;
+                        }
+
+                        .link-online {
+                            background-color: $primary-color;
+                        }
+                        .link-repositorio {
+                            border: 1px solid $primary-color;
+                        }
+                    }
+                }
+    
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+                color: $primary-color;
+            }
+        }
+
+        .swiper {
+            width: 1000px;
+            max-width: 1400px;
+            padding: 4rem 0;
+            overflow: hidden;
         }
     }
 }
